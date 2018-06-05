@@ -1,18 +1,19 @@
 #BlueJ class context
 comment0.target=Responder
-comment0.text=\r\n\ The\ responder\ class\ represents\ a\ response\ generator\ object.\r\n\ It\ is\ used\ to\ generate\ an\ automatic\ response\ to\ an\ input\ string.\r\n\ \r\n\ @author\ \ \ \ \ Michael\ K\u00F6lling\ and\ David\ J.\ Barnes\r\n\ @version\ \ \ \ 0.1\ (2016.02.29)\r\n
+comment0.text=\r\n\ The\ responder\ class\ represents\ a\ response\ generator\ object.\r\n\ It\ is\ used\ to\ generate\ an\ automatic\ response\ to\ an\ input\ HashSet<String>.\r\n\ \r\n\ @author\ \ \ \ \ Mayya\ Bareeva,\ Huong\ Phan,\ Omar\ Gabarine\r\n\ @version\ \ \ \ 0.1\ (04.06.2018)\r\n
 comment1.params=
 comment1.target=Responder()
-comment1.text=\r\n\ Construct\ a\ Responder\ -\ nothing\ to\ do\r\n
+comment1.text=\r\n\ Construct\ a\ Responder.\r\n
 comment2.params=
 comment2.target=java.lang.String\ generateResponse()
-comment2.text=\r\n\ Generate\ a\ response.\r\n\ @return\ \ \ A\ string\ that\ should\ be\ displayed\ as\ the\ response\r\n
+comment2.text=\r\n\ Generate\ a\ default\ response.\r\n\ @return\ \ The\ default\ response.\r\n
 comment3.params=words
 comment3.target=java.lang.String\ generateResponse(java.util.HashSet)
+comment3.text=\r\n\ Generate\ a\ response\ according\ to\ the\ inserted\ set\ of\ Strings.\ \r\n\ @return\ The\ response.\r\n\ @param\ words\ The\ inserted\ data\ by\ the\ user.\ The\ inserted\ data\ will\ be\ \r\n\ split\ into\ the\ substrings.\r\n
 comment4.params=
 comment4.target=void\ fillResponse()
-comment4.text=\r\n\ The\ range\ of\ default\ responses\ when\ the\ programme\ does\ not\ know\ the\ answer.\r\n
+comment4.text=\r\n\ The\ range\ of\ default\ responses\ when\ the\ programm\ does\ not\ know\ what\ to\ say.\r\n
 comment5.params=
 comment5.target=void\ fillResponseMap()
-comment5.text=\r\n\ The\ range\ of\ answers\ (values)\ and\ their\ keywords.\r\n
+comment5.text=\r\n\ The\ range\ of\ responses\ that\ are\ printed\ out\ according\ to\ the\ inserted\ String.\r\n
 numComments=6

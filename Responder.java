@@ -6,10 +6,10 @@ import java. util.HashSet;
 
 /**
  * The responder class represents a response generator object.
- * It is used to generate an automatic response to an input string.
+ * It is used to generate an automatic response to an input HashSet<String>.
  * 
- * @author     Michael Kölling and David J. Barnes
- * @version    0.1 (2016.02.29)
+ * @author     Mayya Bareeva, Huong Phan, Omar Gabarine
+ * @version    0.1 (04.06.2018)
  */
 public class Responder
 {
@@ -18,7 +18,7 @@ public class Responder
     private HashMap<String, String> answersMap;
     private HashSet<String> words;
     /**
-     * Construct a Responder - nothing to do
+     * Construct a Responder.
      */
     
     public Responder()
@@ -33,15 +33,20 @@ public class Responder
     }
 
     /**
-     * Generate a response.
-     * @return   A string that should be displayed as the response
+     * Generate a default response.
+     * @return  The default response.
      */
     public String generateResponse()
     {
       int index = random.nextInt(responses.size()); 
       return responses.get(index);
     }
-    
+    /**
+     * Generate a response according to the inserted set of Strings. 
+     * @return The response.
+     * @param words The inserted data by the user. The inserted data will be 
+     * split into the substrings.
+     */
     public String generateResponse(HashSet <String> words){
      for (String word : words){
         String answer = answersMap.get(word);
@@ -53,7 +58,7 @@ public class Responder
         }
     
     /**
-     * The range of default responses when the programme does not know the answer.
+     * The range of default responses when the programm does not know what to say.
      */
     public void fillResponse(){
       responses.add("Did you check the FAQ section on our website?");
@@ -66,7 +71,7 @@ public class Responder
     }
     
     /**
-     * The range of answers (values) and their keywords.
+     * The range of responses that are printed out according to the inserted String.
      */
     public void fillResponseMap(){
     answersMap.put("slow","Probably, our app is not compatible \n" +
